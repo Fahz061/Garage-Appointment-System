@@ -1,8 +1,8 @@
 # Auto Garage Appointment System
 
 ## Team Members
-- Fahad Malik 
-- Jacob Magera
+- Your Name (Student ID)
+- Team Member (Student ID)
 
 ## Project Description
 This project is a simple appointment management system for a local auto garage.  
