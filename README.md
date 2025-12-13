@@ -1,8 +1,8 @@
 # Auto Garage Appointment System
 
 ## Team Members
-- Your Name (Student ID)
-- Team Member (Student ID)
+- Fahad Malik (2056634)
+- Jacob Magera (Student ID)
 
 ## Project Description
 This project is a simple appointment management system for a local auto garage.  
@@ -37,17 +37,83 @@ Deliverable 1 includes:
 5. Use the GUI window to test adding and viewing customers.
 
 ## File Contents
-- `database.sql` – Creates database schema and inserts sample services/customers/employees/appointments.
-- `src/DatabaseConnection.java` – Handles the MySQL JDBC connection.
-- `src/Customer.java` – Customer model.
-- `src/Employee.java` – Employee model.
-- `src/Appointment.java` – Appointment model.
-- `src/CustomerDAO.java` – DAO interface.
-- `src/CustomerDAOImpl.java` – DAO implementation for customers.
-- `src/MainController.java` – Main logic controller.
-- `src/MainView.java` – Basic Swing GUI.
-- `src/Main.java` – Entry point of the program.
+-database.sql – Creates database schema and inserts sample data
+
+-DatabaseConnection.java – Handles MySQL JDBC connection
+
+-Customer.java – Customer model
+
+-Employee.java – Employee model
+
+-Service.java – Service model
+
+-Appointment.java – Appointment model
+
+-DAO interfaces and implementations – Handle CRUD operations
+
+-MainController.java – Business logic and validation
+
+-MainView.java – Swing GUI
+
+-Main.java – Application entry point
+
+## Software Design Patterns Used 
+- MVC (Model-View-Controller)
+Separates the application into models, controller logic, and user interface
+
+-DAO (Data Access Object)
+Abstracts database access and keeps SQL logic separate from application logic
+
+-Factory Pattern
+DAOFactory centralizes the creation of DAO objects
+
+-Singleton Pattern
+DatabaseConnection ensures a single database connection instance
+
+## Error Handling & Validation 
+-Input validation is performed before database operations
+
+-Invalid or missing data is handled safely
+
+-Database errors are handled using try-catch blocks
+
+
+## Java Collections & Streams 
+-ArrayList is used to store collections of data retrieved from the database
+
+-HashMap is used to cache service IDs and service names for fast lookup
+
+-Java Stream API is used to filter appointments by status using lambda expressions
+
+## Contribution Statement 
+
+
+## Fahad Malik:
+
+-Designed and implemented the database schema
+
+-Implemented JDBC connection logic
+
+-Created model classes
+
+-Implemented DAO interfaces and implementations
+
+-Implemented Factory and Singleton patterns
+
+-Built controller logic and validation
+
+-Used Java Collections and Stream API
+
+## Jacob Magera:
+
+-User interface improvements (Swing)
+
+-Internationalization support (English/French)
+
+-Presentation and video demonstration support
+
 
 ## Notes
-- This is a starting point for the larger project.
-- Only basic features are implemented for Deliverable 1.
+- This project can be upgraded further with additional features being added to it to improve the usability of it.
+
+- This project is very useful in real-world businesses involving an appointment system.
