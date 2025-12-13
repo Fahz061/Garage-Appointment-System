@@ -17,7 +17,7 @@ public class Main {
         });
 
         view.getViewButton().addActionListener(e -> {
-            var list = controller.loadCustomers();
+            var list = controller.getAllCustomers();
             StringBuilder sb = new StringBuilder();
 
             for (Customer c : list) {
